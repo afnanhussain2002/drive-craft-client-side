@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 
 const AddProduct = () => {
     const handleAddProduct = event =>{
@@ -16,7 +16,27 @@ const AddProduct = () => {
 
         console.log(carInfo);
 
-
+       fetch('http://localhost:5000/products',{
+        method:'POST',
+        headers:{
+            'content-type': 'application/json'
+        },
+        body:JSON.stringify(carInfo)
+       })
+       .then(res =>res.json())
+       .then(data =>{
+        console.log(data);
+         if (data.insertedId) {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your car has been added',
+                showConfirmButton: false,
+                timer: 1500
+              })
+         }
+       })
+       form.reset()
 
     }
     return (
@@ -28,20 +48,15 @@ const AddProduct = () => {
     <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       <div className="lg:col-span-2 lg:py-12"> 
         <p className="max-w-xl text-lg">
-          At the same time, the fact that we are wholly owned and totally
-          independent from manufacturer and other group control gives you
-          confidence that we will only recommend what is right htmlFor you.
+        Welcome to our exclusive Add Car Collection product page, the ultimate destination for automotive enthusiasts and collectors alike. Whether you are a passionate car aficionado or an avid collector looking to expand your assemblage, our platform offers a seamless and intuitive experience for adding your prized automobiles to your collection.
+
+Explore our user-friendly form designed specifically for effortlessly adding your treasured vehicles. With a simple and intuitive interface, you can now showcase every detail of your exceptional cars, from their make and model to their unique features and historical significance. Our streamlined process ensures that your cars are presented in their best light, allowing you to capture the essence and allure of each vehicle you add.
+
+Enjoy the convenience of organizing your collection all in one place, enabling you to easily manage and track your inventory with precision. With our dedicated tools and comprehensive database, you can curate your collection to reflect your distinct taste and passion for automotive excellence.
+
         </p>
 
-        <div className="mt-8">
-          <a href="" className="text-2xl font-bold text-pink-600">
-            0151 475 4450
-          </a>
-
-          <address className="mt-2 not-italic">
-            282 Kevin Brook, Imogeneborough, CA 58517
-          </address>
-        </div>
+      
       </div>
 
       <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
@@ -73,7 +88,7 @@ const AddProduct = () => {
               <label className="sr-only" htmlFor="phone">Car Model</label>
               <input
                 className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                placeholder="Brand Name"
+                placeholder="Car Model"
                 type="text"
                 id="model"
                 name="car_model"
@@ -100,7 +115,6 @@ const AddProduct = () => {
                 <span className="text-sm"> Audi </span>
               </label>
             </div>
-
             <div>
               <input
                 className="peer sr-only"
@@ -119,7 +133,6 @@ const AddProduct = () => {
                 <span className="text-sm"> BMW </span>
               </label>
             </div>
-
             <div>
               <input
                 className="peer sr-only"
@@ -127,11 +140,68 @@ const AddProduct = () => {
                 type="radio"
                 tabIndex="-1"
                 name="brand"
-                value={'LEXUS'}
+                value={'Bugatti'}
               />
 
               <label
                 htmlFor="option3"
+                className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
+                tabIndex="0"
+              >
+                <span className="text-sm"> Bugatti </span>
+              </label>
+            </div>
+            <div>
+              <input
+                className="peer sr-only"
+                id="option4"
+                type="radio"
+                tabIndex="-1"
+                name="brand"
+                value={'Canoo'}
+              />
+
+              <label
+                htmlFor="option4"
+                className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
+                tabIndex="0"
+              >
+                <span className="text-sm"> Canoo </span>
+              </label>
+            </div>
+            <div>
+              <input
+                className="peer sr-only"
+                id="option5"
+                type="radio"
+                tabIndex="-1"
+                name="brand"
+                value={'Ferrari'}
+              />
+
+              <label
+                htmlFor="option5"
+                className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
+                tabIndex="0"
+              >
+                <span className="text-sm"> Ferrari </span>
+              </label>
+            </div>
+
+          
+
+            <div>
+              <input
+                className="peer sr-only"
+                id="option6"
+                type="radio"
+                tabIndex="-1"
+                name="brand"
+                value={'LEXUS'}
+              />
+
+              <label
+                htmlFor="option6"
                 className="block w-full rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black peer-checked:border-black peer-checked:bg-black peer-checked:text-white"
                 tabIndex="0"
               >
@@ -179,7 +249,7 @@ const AddProduct = () => {
               type="submit"
               className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
             >
-              Add Product
+              Add Your Cars
             </button>
           </div>
         </form>
