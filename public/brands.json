@@ -1,0 +1,63 @@
+[
+    {
+      "brand": "Bugatti",
+      "thumbnail": "https://tse1.mm.bing.net/th?id=OIP.qdVVAFBWDjKaNYoDimCj9wHaE8&pid=Api&P=0&h=220",
+      "banner_images": [
+        "https://media.autoexpress.co.uk/image/private/s--tNmZnmDy--/v1563182806/autoexpress/2018/08/01_37.jpg",
+        "https://assets.autobuzz.my/wp-content/uploads/2020/03/06140636/bugatti-chiron-pur-sport-faster-in-corners-01.jpg",
+        "https://www.gtspiritmedia.com/gtspirit/uploads/2018/10/Divo03.jpg",
+        "https://www.carscoops.com/wp-content/uploads/2021/01/bugatti-chiron-pur-sport-deliveries-start-16.jpg"
+      ]
+    },
+    {
+      "brand": "Lexus",
+      "thumbnail": "https://tse4.mm.bing.net/th?id=OIP.BryydxkjmZFFR0VzgY41pQHaEK&pid=Api&P=0&h=220",
+      "banner_images": [
+        "https://performancedrive.com.au/wp-content/uploads/2016/09/Lexus-UX-concept-1.jpg",
+        "https://www.hdcarwallpapers.com/walls/2017_lexus_nx_luxury_crossover-HD.jpg",
+        "https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/16q2/667719/2017-lexus-is-sedan-photos-and-info-news-car-and-driver-photo-667805-s-original.jpg",
+        "https://4.bp.blogspot.com/-Bwo5B2s9ZPs/UwRc21WSqGI/AAAAAAAABJk/Rzk_eMrcXe0/s1600/Lexus+6.jpg"
+      ]
+    },
+    {
+      "brand": "Ferrari",
+      "thumbnail": "https://tse2.mm.bing.net/th?id=OIP.3dQN4Xikw8qBxvBG9iMe0gHaEK&pid=Api&P=0&h=220",
+      "banner_images": [
+        "https://cdn.ferrari.com/cms/network/media/img/resize/649ec85da3933d0095d1203f-ferrari-models-menu-2023-cards-sf90-stradale?width=1040&height=585",
+        "https://cdn.ferrari.com/cms/network/media/img/resize/649ec877f6396100889d6e16-ferrari-models-menu-2023-cards-sf90-spider?width=1040&height=585",
+        "https://cdn.ferrari.com/cms/network/media/img/resize/649ec8bf437d870023cf534e-ferrari-models-menu-2023-cards-812-gts?width=1040&height=585",
+        "https://cdn.ferrari.com/cms/network/media/img/resize/649ec8d5e4a85f0089b49316-ferrari-models-menu-2023-cards-ferrari-roma?width=1040&height=585"
+      ]
+    },
+    {
+      "brand": "BMW",
+      "thumbnail": "https://tse4.mm.bing.net/th?id=OIP.e_tLhjoJ4DlOtBn8OUy-sgHaEY&pid=Api&P=0&h=220",
+      "banner_images": [
+        "https://4.bp.blogspot.com/-E49kROFOyjk/WWLkb639KVI/AAAAAAAAvVE/gGhxn8p94940K-w1RwUXWUTi7f1edfoQACLcBGAs/s1600/White-BMW-M3-3-.jpg",
+        "https://modifiiedpowerwheels.com/wp-content/uploads/2020/05/bmw-x6-m-competition-in-alpine-white-with-sakhir-orange-interior-7.jpg",
+        "https://i.gaw.to/content/photos/21/58/215890_2015_BMW_i8.jpg",
+        "https://s1.cdn.autoevolution.com/images/news/gallery/2020-bmw-330i-shows-off-dravite-grey-metallic-and-m-sport-goodies_14.jpg"
+      ]
+    },
+    {
+      "brand": "Audi",
+      "thumbnail": "https://tse2.mm.bing.net/th?id=OIP.Z9mvbx6bRdblENgP3no2KgHaEK&pid=Api&P=0&h=220",
+      "banner_images": [
+        "https://tse3.mm.bing.net/th?id=OIP.xtbekaMdPkxohzinnNhT3QHaEK&pid=Api&P=0&h=220",
+        "https://s1.cdn.autoevolution.com/images/news/gallery/all-new-audi-a4-allroad-quattro-available-from-44750-with-20-and-30-engines_15.jpg",
+        "https://images4.alphacoders.com/929/929342.jpg",
+        "https://i2.wp.com/us.motorsactu.com/wp-content/uploads/2020/04/Audi-e-tron-GT-concept-7022.jpg?fit=1200%2C675&ssl=1"
+      ]
+    },
+    {
+      "brand": "Canoo",
+      "thumbnail": "https://tse4.mm.bing.net/th?id=OIP.IVoZrUqgxcKsDHQenR_kmwHaDt&pid=Api&P=0&h=220",
+      "banner_images": [
+        "https://cdn.wccftech.com/wp-content/uploads/2020/12/canoo-mpdv-electric-van_100774839.jpg",
+        "https://www.dailybreeze.com/wp-content/uploads/2020/08/TDB-L-CANOO-0830-01-BM-1.jpg?w=1520",
+        "https://s1.cdn.autoevolution.com/images/news/gallery/canoo-is-subject-of-an-extensive-investigation-by-the-sec_1.jpg",
+        "https://tse3.mm.bing.net/th?id=OIP.YrnwEZ3plit7GHB2rWWPigHaEK&pid=Api&P=0&h=220"
+      ]
+    }
+  ]
+  
