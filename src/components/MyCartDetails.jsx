@@ -1,7 +1,46 @@
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 
 const MyCartDetails = ({myCar}) => {
     const {carName, carDescription, carBrand, carModel, carPhoto, rating, carPrice,_id } = myCar
+
+    const [cart,setCart] = useState(myCar)
+
+    const handleDelete = id =>{
+        console.log(id);
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            fetch(`http://localhost:5000/cart/${id}`,{
+              method:'DELETE'
+          })
+          .then(res => res.json())
+          .then(data =>{
+              console.log(data);
+              // remove user from ui also
+              if (data.deletedCount > 0) {
+                Swal.fire(
+                  'Deleted!',
+                  'Your file has been deleted.',
+                  'success'
+                )
+              }
+              const remainingUser = cart.filter(singleCart => singleCart._id !== id)
+              setCart(remainingUser)
+          } )
+            
+          }
+        })
+    
+    }
 
     return (
         <>
@@ -26,7 +65,7 @@ const MyCartDetails = ({myCar}) => {
       <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
     </div>
       </div>
-      <button  className='btn w-full mt-3'>Delete From Cart</button>
+      <button onClick={()=>handleDelete(_id)} className='btn w-full mt-3'>Delete From Cart</button>
     </div>  
         </>
     );
