@@ -41,7 +41,7 @@ const Login = () => {
         <div>
              <div className=" flex items-center justify-center h-screen" style={{background:'url(https://i.pinimg.com/originals/1b/74/81/1b74816e56e5a554d91fa3923f565367.jpg) center '}}>
         <div className="p-8 rounded shadow-md w-96 bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg">
-          <h2 className="text-2xl font-bold mb-6 text-white">Register</h2>
+          <h2 className="text-2xl font-bold mb-6 text-white">Login</h2>
           <form onSubmit={handleLogin}>
     
            

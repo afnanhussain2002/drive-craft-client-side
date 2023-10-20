@@ -1,3 +1,4 @@
+import Login from "../Pages/Login";
 
 
 
@@ -8,11 +9,14 @@ const HomeBanner = () => {
     
   <div className="hero-overlay bg-opacity-60"></div>
 
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+  <div className="hero-content flex-col justify-between text-center text-neutral-content md:flex-row">
+    <div className="max-w-md text-left">
+      <h1 className="mb-5 text-5xl font-bold">Find Your Dream Ride at DriveCraft</h1>
+      <p className="mb-5">Discover a diverse selection of top-quality vehicles tailored to your preferences at DriveCraft. With our seamless browsing experience and expert guidance, finding the perfect car has never been easier.</p>
       <button className="btn btn-primary">Get Started</button>
+    </div>
+    <div className="">
+   
     </div>
   </div>
 </div>

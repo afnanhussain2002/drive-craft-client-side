@@ -6,6 +6,7 @@ import { auth } from "../firebase/firebase.config";
 export const AuthContext = createContext(null)
 
 const AuthProvider = ({children}) => {
+    const [cars,setCars] = useState(null)
     const [users,setUsers] = useState(null);
     const [loading,setLoading] = useState(true)
     const provider = new GoogleAuthProvider();
@@ -38,8 +39,12 @@ const AuthProvider = ({children}) => {
             unSubscribe();
            }
     },[])
-
-    const authInfo = {users, loading, createUser, loginUser, google, logOut}
+    useEffect(()=>{
+        fetch('http://localhost:5000/products')
+        .then(res => res.json())
+        .then(data => setCars(data))
+    },[])
+    const authInfo = {users, cars, loading, createUser, loginUser, google, logOut}
     return (
         <AuthContext.Provider value={authInfo}>
         {children}

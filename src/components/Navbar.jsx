@@ -68,7 +68,14 @@ const Navbar = () => {
               <a onClick={handleLogOut} className="btn">LogOut</a>  
         </div>
           }
-         
+         {
+          !users&&
+
+          <div className="navbar-end">
+          <Link className="btn">Register</Link>  
+    </div>
+          
+         }
       </div>
     </div>
   );
