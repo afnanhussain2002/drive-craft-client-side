@@ -14,9 +14,9 @@ const BrandSection = () => {
   }, []);
   return (
     <>
-    <h3 className="text-center text-white text-5xl mt-8">All Brands</h3>
+    <h3 className="text-center text-black bg-slate-400 rounded-lg p-4 w-80 mx-auto text-5xl mt-8 dark:text-white">All Brands</h3>
 
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-1 lg:grid-cols-3 ">
     {
         brands.map(brand => <div key={brand.brand} className="flex flex-col justify-center items-center  mx-auto my-8">
         <div

@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 const Carsol = () => {
     return (
-        <Carousel autoPlay={true} width={1024}>
+        <Carousel autoPlay={true} width={1024} >
         <div>
             <img src="https://assets.autobuzz.my/wp-content/uploads/2020/03/06140636/bugatti-chiron-pur-sport-faster-in-corners-01.jpg" />
             

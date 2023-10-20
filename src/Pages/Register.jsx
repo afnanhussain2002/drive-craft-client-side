@@ -34,6 +34,18 @@ const Register = () => {
         createUser(email,password)
         .then(result =>{
             console.log(result.user)
+            
+              fetch('http://localhost:5000/users',{
+              method:'POST',
+              headers:{
+                'content-type': 'application/json'
+              },
+              body: JSON.stringify(userInfo)
+            })
+            .then(res =>res.json())
+            .then(data =>{
+              console.log(data);
+            })
             updateProfile(auth.currentUser, {
                 displayName: name, photoURL: userPhoto
               }).then(() => {
@@ -42,6 +54,7 @@ const Register = () => {
                 setErr(error.message)
                 
               });
+              
               setSuccess('User Created Succsessfully')
               navigate(location?.state? location.state: '/')
         })

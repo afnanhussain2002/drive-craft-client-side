@@ -2,10 +2,10 @@ import React from 'react';
 
 const Gallary = () => {
     return (
-        <section className="text-gray-600 body-font mt-9">
+        <section className="text-gray-600 body-font mt-4">
   <div className="container px-5 py-24 mx-auto flex flex-wrap">
-    <div className="flex justify-center w-full mb-20 flex-wrap">
-      <h1 className="text-center text-5xl sm:text-5xl   font-medium title-font text-white lg:w-1/3 lg:mb-0 mb-4">Gallary Of Cars</h1>
+    <div className="flex justify-center w-full mb-20 flex-wrap ">
+      <h1 className="text-center text-5xl sm:text-5xl bg-slate-400 rounded-lg p-4 dark:text-white font-medium title-font text-black lg:w-1/3 lg:mb-0 mb-4 ">Gallary Of Cars</h1>
      
     </div>
     <div className="flex flex-wrap md:-m-2 -m-1">
