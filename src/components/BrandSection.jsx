@@ -14,7 +14,7 @@ const BrandSection = () => {
   }, []);
   return (
     <>
-    <h3 className="text-center text-3xl">data: {brands.length}</h3>
+    <h3 className="text-center text-white text-5xl mt-8">All Brands</h3>
 
     <div className="grid grid-cols-3">
     {

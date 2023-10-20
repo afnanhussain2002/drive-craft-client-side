@@ -33,7 +33,7 @@ const MyCartDetails = ({myCar}) => {
                   'success'
                 )
               }
-              const remainingUser = cart.filter(singleCart => singleCart._id !== id)
+              const remainingUser = cart.filter(() => _id !== id)
               setCart(remainingUser)
           } )
             
