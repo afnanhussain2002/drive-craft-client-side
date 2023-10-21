@@ -83,9 +83,15 @@ const Navbar = () => {
         <div className=""></div>
         {users && (
           <div className="navbar-end flex flex-col md:flex-row">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                  
+                  <img src={users.photoURL? users.photoURL : 'https://tse1.mm.bing.net/th?id=OIP.WPmdNoTzIuLFH4m-D36ArAEsEs&pid=Api&P=0&h=220'} />
+                  </div>
+            </label>
             <label className="swap swap-rotate mr-6">
               {/* this hidden checkbox controls the state */}
-              <input type="checkbox" />
+              <input type="checkbox"  onClick={handleToggle}/>
 
               {/* sun icon */}
               <svg

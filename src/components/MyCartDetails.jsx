@@ -27,6 +27,7 @@ const MyCartDetails = ({myCar}) => {
               console.log(data);
               // remove user from ui also
               if (data.deletedCount > 0) {
+                window.location.reload();
                 Swal.fire(
                   'Deleted!',
                   'Your file has been deleted.',
@@ -39,6 +40,7 @@ const MyCartDetails = ({myCar}) => {
             
           }
         })
+        
     
     }
 
