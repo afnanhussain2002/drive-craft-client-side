@@ -23,7 +23,7 @@ const UpdateProduct = () => {
 
         console.log(carInfoUpdate);
 
-        fetch(`http://localhost:5000/products/${_id}`,{
+        fetch(`https://b8a10-brandshop-server-side.vercel.app/products/${_id}`,{
             method:'PUT',
             headers:{
                'content-type':'application/json'

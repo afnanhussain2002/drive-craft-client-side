@@ -32,17 +32,17 @@ import ErrorPage from "../Pages/ErrorPage";
             {
               path:'/cart',
               element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
-              loader: ()=> fetch('http://localhost:5000/cart')
+              loader: ()=> fetch('https://b8a10-brandshop-server-side.vercel.app/cart')
             },
             {
               path:'/:brand',
               element:<PrivateRoute><BrandDetails></BrandDetails></PrivateRoute>,
-              loader:() => fetch(`http://localhost:5000/products`)
+              loader:() => fetch(`https://b8a10-brandshop-server-side.vercel.app/products`)
             },
            {
             path:'/update/:id',
             element:<UpdateProduct></UpdateProduct>,
-            loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+            loader: ({params})=> fetch(`https://b8a10-brandshop-server-side.vercel.app/products/${params.id}`)
            },
             {
               path:'/login',

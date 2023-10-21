@@ -7,7 +7,7 @@ const BrandsDetailsCard = ({cars}) => {
     const {carName, carDescription, carBrand, carModel, carPhoto, rating, carPrice,_id } = cars || {};
     const handleAddToCart = () =>{
       console.log(cars);
-      fetch('http://localhost:5000/cart',{
+      fetch('https://b8a10-brandshop-server-side.vercel.app/cart',{
         method:'POST',
         headers:{
             'content-type': 'application/json'
